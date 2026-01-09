@@ -7,8 +7,8 @@ export default function Tasks() {
 
   // BEGINNER: Swap the sample tasks below for your own data or UI
   return (
-    <div className="rounded-xl border border-white/10 bg-white/5 p-4 shadow-[0_10px_40px_rgba(15,23,42,0.35)]">
-      <div className="mb-2 text-sm font-semibold text-white">Tasks</div>
+    <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur transition hover:-translate-y-1 hover:border-emerald-200/40 hover:bg-white/10 hover:shadow-[0_18px_50px_rgba(15,23,42,0.4)]">
+      <div className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">Tasks</div>
       <ul className="space-y-1 text-sm text-slate-300">
         {tasks.map((task) => (
           <li key={task.id} className="flex items-center gap-2">

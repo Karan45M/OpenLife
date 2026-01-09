@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer'
 // Simple layout for OpenLife pages
 export default function BaseLayout({ title = 'OpenLife', subtitle = 'Daily Workflow & Time Management', children }) {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    <div className="min-h-screen text-slate-100">
       <Header />
 
       <main className="flex w-full flex-col gap-8 px-(--page-gutter) py-8">

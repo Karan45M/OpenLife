@@ -19,11 +19,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(900px 520px at 70% 20%, rgba(46, 170, 255, 0.2), transparent 60%),
-    radial-gradient(700px 520px at 15% 65%, rgba(78, 219, 122, 0.18), transparent 60%),
-    radial-gradient(620px 420px at 55% 80%, rgba(255, 198, 74, 0.16), transparent 60%),
-    linear-gradient(180deg, #05070c 0%, #0b0f18 40%, #05070c 100%);
+  background: transparent;
   color: #e9edf5;
   position: relative;
   overflow-x: hidden;
@@ -32,10 +28,12 @@ body {
 #root {
   width: 100%;
   min-height: 100vh;
+  position: relative;
+  isolation: isolate;
 }
 
-body::before,
-body::after {
+#root::before,
+#root::after {
   content: '';
   position: fixed;
   inset: 0;
@@ -43,17 +41,16 @@ body::after {
   z-index: -1;
 }
 
-body::before {
+#root::before {
   background:
-    radial-gradient(480px 360px at 78% 28%, rgba(65, 120, 255, 0.24), transparent 60%),
-    radial-gradient(520px 400px at 20% 35%, rgba(255, 215, 90, 0.2), transparent 60%),
-    radial-gradient(520px 420px at 35% 85%, rgba(46, 201, 142, 0.18), transparent 60%);
-  filter: blur(10px) saturate(120%);
-  opacity: 0.9;
+    radial-gradient(900px 520px at 70% 20%, rgba(46, 170, 255, 0.2), transparent 60%),
+    radial-gradient(700px 520px at 15% 65%, rgba(78, 219, 122, 0.18), transparent 60%),
+    radial-gradient(620px 420px at 55% 80%, rgba(255, 198, 74, 0.16), transparent 60%),
+    linear-gradient(180deg, rgba(5, 7, 12, 0.92) 0%, rgba(11, 15, 24, 0.9) 40%, rgba(5, 7, 12, 0.92) 100%);
 }
 
-body::after {
-  background-image:
+#root::after {
+  background:
     linear-gradient(transparent 24px, rgba(255, 255, 255, 0.04) 25px),
     linear-gradient(90deg, transparent 24px, rgba(255, 255, 255, 0.04) 25px);
   background-size: 26px 26px;

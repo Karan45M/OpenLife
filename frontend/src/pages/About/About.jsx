@@ -6,10 +6,30 @@ export default function About() {
       <div className="flex flex-col gap-3">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">About</p>
         <h1 className="text-3xl font-bold text-white sm:text-4xl">Why we are building OpenLife</h1>
-        <p className="w-full text-base text-slate-200/85">
-          OpenLife is a lightweight foundation for personal productivity that stays transparent, hackable, and community-driven. The
-          roadmap is public, the design is simple to extend, and contributors are encouraged to experiment.
-        </p>
+        <div className="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-6 text-base text-slate-200/85 backdrop-blur">
+          <p className="leading-relaxed">
+            OpenLife is an open-source productivity and time-management project focused on helping individuals understand how they
+            spend their time and how they can improve their daily workflow through reflection and data-driven insights.
+          </p>
+          <p className="leading-relaxed">
+            The core idea behind OpenLife is simple: most people stay busy but lack clarity. OpenLife aims to bridge this gap by
+            allowing users to track daily activities, analyze time usage patterns, and make small, consistent improvements over time.
+          </p>
+          <p className="leading-relaxed">
+            Instead of being just another task tracker, OpenLife emphasizes awareness, analysis, and gradual improvement. It is
+            designed to capture not only what tasks are done, but also how time flows throughout the day, helping users identify
+            distractions, inefficiencies, and productivity leaks.
+          </p>
+          <p className="leading-relaxed">
+            The project is built with a clean, API-driven and modular architecture, making it easy to extend, scale, and experiment
+            with new ideas. It is intentionally kept beginner-friendly so that students, freshers, and new open-source contributors
+            can learn real-world development practices while building something meaningful.
+          </p>
+          <p className="leading-relaxed">
+            OpenLife is community-driven by design. Contributors are encouraged to participate not only through code, but also by
+            proposing ideas, improving documentation, refining workflows, and shaping the long-term vision of the project together.
+          </p>
+        </div>
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Bhupinder Sehjal</p>
       </div>
 

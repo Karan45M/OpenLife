@@ -12,7 +12,8 @@ const steps = [
 export default function Contribute() {
   return (
     <div className="space-y-8">
-      <div className="flex flex-col gap-3">
+      <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+        <div className="flex flex-col gap-3">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">Community</p>
         <h1 className="text-3xl font-bold text-white sm:text-4xl">Contributing to OpenLife</h1>
         <p className="w-full text-base text-slate-200/85">
@@ -27,6 +28,7 @@ export default function Contribute() {
             Back to Home
           </Button>
         </div>
+      </div>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
