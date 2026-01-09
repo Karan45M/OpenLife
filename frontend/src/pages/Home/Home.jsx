@@ -24,12 +24,16 @@ export default function Home() {
 
       <div className="grid gap-6 md:grid-cols-3">
         <Card title="What OpenLife is">
-          OpenLife is a simple dashboard starter for mapping your day. You get clear sections for tasks, a timer, and a daily recap
-          you can extend with your own ideas.
+          OpenLife is a simple tool that helps you organize your tasks,
+          plan your time, and stay focused on what matters most.
+          It is designed to be easy to use, even if you are just starting
+          with productivity tools.
         </Card>
         <Card title="Why time awareness matters">
-          Seeing where your time goes helps you stay calm and focused. Even a small timer or checklist can reveal patterns you can
-          improve each week.
+         Managing your time helps you reduce stress, avoid last-minute rushes,
+         and make steady progress toward your goals.
+         When your tasks are organized, you can focus better and feel more
+         in control of your day.
         </Card>
         <Card title="How beginners can contribute">
           Start by editing the placeholder components below. Swap the text, add inputs, and try new layouts. Small pull requests are
